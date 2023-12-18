@@ -1,0 +1,19 @@
+{
+  "name": "venta-de-funcos-con-nodejs",
+  "version": "1.0.1",
+  "description": "venta de funcos echo con node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bjohan23/venta-de-funcos-con-nodeJS.git"
+  },
+  "author": "johan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bjohan23/venta-de-funcos-con-nodeJS/issues"
+  },
+  "homepage": "https://github.com/Bjohan23/venta-de-funcos-con-nodeJS#readme"
+}
