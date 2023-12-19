@@ -9,6 +9,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url)); // obtiene la ruta ab
 app.set("views", join(__dirname, "views")); //establece la ubicación de las plantillas . la
 app.set("view engine", "ejs"); //
 
+// para la carpeta publica usamos la siguiente linea:
 app.use(indexRouter); // usamos el router index
 app.use(express.static(join(__dirname, "public"))); // seteamos la carpeta publica :
 

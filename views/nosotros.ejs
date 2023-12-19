@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%- title -%></title>
+    <%- include('partials/head.ejs') %>
+  </head>
+  <body>
+    <%- include('partials/nav.ejs') %> 
+    <section>
+        <div class="header-content container">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img nosotros/BANNER NOSOTROS.png" alt="...">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <br>
+    <br>
+    <div class="row">
+        <img src="img/NOSOTROS.png" alt="Nosotros" class="img-fluid">
+    </div>
+    <div class="card-container">
+    <div class="card">
+        <div class="face front">
+            <img src="img nosotros/NOSOTROS.jpg" width="300px" alt="aaaaaaaa">
+            <h3>ACERCA DE</h3>
+        </div>
+        <div class="face back">
+            <h3>ACERCA DE</h3>
+            <p>¡Bienvenidos a FUNKOFANTASY! Somos una apasionada empresa dedicada a proporcionar a nuestros clientes
+                la mejor experiencia de comprar figuras Funko Pop. Nos enorgullece ser el destino preferido
+                para los coleccionistas y amantes de la cultura pop. En nuestra tienda encontrarás una amplia
+                selección de figuras Funko Pop diviertete.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face front">
+            <img src="img nosotros/MISION.jpg" alt="">
+            <h3>MISIÓN</h3>
+        </div>
+        <div class="face back">
+            <h3>MISIÓN</h3>
+            <p>Proporcionar una amplia selección de Funkos auténticos y de alta calidad a precios competitivos, mientras
+                ofrecemos un servicio al cliente excepcional y una experiencia de compra en línea fácil y conveniente.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="face front">
+            <img src="img nosotros/VISION.jpg" alt="">
+            <h3>VISIÓN</h3>
+        </div>
+        <div class="face back">
+            <h3>VISIÓN</h3>
+            <p>Ser reconocidos como el minorista líder en línea de Funkos en todo el mundo, y ser el destino
+                preferido para los coleccionistas y fanáticos de la cultura pop que buscan productos auténticos y de
+                alta calidad. Además, nos esforzamos por ser una empresa socialmente responsable que contribuye a la
+                comunidad y al medio ambiente.</p>
+            
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+        <img src="img nosotros/IMG CONTACTANOS.png" alt="Nosotros" class="img-fluid">
+    </div>
+    <!--FORMULARIO-->
+   <!--FORMULARIO-->
+<div class="contact-container">
+  <div class="for-container">
+      <h3>DEJA TUS DATOS</h3>
+      <form id="myForm" class="contact-form">
+          <input type="text" id="nombre" placeholder="Nombre" required>
+          <input type="email" id="email" placeholder="Escribe tu email..." required>
+          <textarea id="mensaje" cols="30" rows="10" placeholder="Escribe un mensaje aquí..."></textarea>
+          <input type="button" value="Enviar" class="send-button" onclick="mostrarDatos()">
+      </form>
+  </div>
+  <!--Mapa-->
+  <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.4830449528082!2d-79.83333663051444!3d-6.778109067844363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904cef2c59a8af49%3A0x26b424ea1ed54f05!2sPhantom!5e0!3m2!1ses-419!2spe!4v1701229077877!5m2!1ses-419!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>

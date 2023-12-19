@@ -1,0 +1,107 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+    <img
+      src="img/logo de la empresa.png"
+      alt="Logo de FANTASYFUNKO"
+      width="150px"
+      alt="Logo de FUNKOS"
+    />
+  </a>
+  <input
+    id="checkbox"
+    type="checkbox"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  />
+  <label class="toggle" for="checkbox">
+    <div id="bar1" class="bars"></div>
+    <div id="bar2" class="bars"></div>
+    <div id="bar3" class="bars"></div>
+  </label>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" style="color: rgb(255, 0, 0)" id="blanco" href="/"
+          >INICIO
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="blanco" href="/marvel">MARVEL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="blanco" href="/starwars">STAR WARS </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="blanco" href="/disney">DISNEY </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="blanco" href="/dc">DC</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="blanco" href="/nosotros">NOSOTROS</a>
+      </li>
+    </ul>
+
+    <div class="my-2 my-lg-0">
+      <ul>
+        <li class="submenu">
+          <img id="img-carrito" src="img/car.svg" alt="car" />
+          <div id="carrito">
+            <table id="lista-carrito">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p>Total <span id="total">S/0.00</span></p>
+            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+            <a href="#" id="Imprimir" class="btn-3">Comprar</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="my-2 my-lg-0">
+      <a
+        href="iniciarSesion"
+        class="nav-link text-info"
+        id="iniciar"
+        onclick="entrar();"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-person-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+          />
+        </svg>
+
+        Iniciar sesión
+      </a>
+
+      <!-- se mostra cuando el usuario inicia sesion -->
+      <a class="Btn" href="/" id="salir">
+        <div class="sign" id="salir" onclick="salir()">
+          <svg viewBox="0 0 512 512">
+            <path
+              d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+            ></path>
+          </svg>
+        </div>
+        <div class="text">Salir</div>
+      </a>
+    </div>
+  </div>
+</nav>

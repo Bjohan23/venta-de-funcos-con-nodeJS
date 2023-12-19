@@ -7,5 +7,6 @@ router.get("/starwars", (req, res) => res.render("starwars", { title: "starwars"
 router.get("/dc", (req, res) => res.render("dc", { title: "dc" }));
 router.get("/disney", (req, res) => res.render("disney", { title: "disney" }));
 router.get("/nosotros", (req, res) => res.render("nosotros", { title: "nosotros" }));
+router.get("/iniciarSesion", (req, res) => res.render("iniciarSesion", { title: "iniciarSesion" }));
 
 export default router;

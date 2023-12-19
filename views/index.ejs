@@ -1,1 +1,336 @@
-<h1>hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAGINA DE FUNKOS</title>
+    <%- include('partials/head.ejs') %>
+  </head>
+  <body>
+    <!-- incluimos la barra de navigation -->
+    <%- include('partials/nav.ejs') %>
+    <!--Carrusel de banners-->
+    <section>
+      <div class="header-content container">
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/BANNER 01.png"
+                class="d-block w-100"
+                alt="Banner 01"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/BANNER 02.png"
+                class="d-block w-100"
+                alt="Banner 02"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/BANNER 03.png"
+                class="d-block w-100"
+                alt="Banner 03"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/BANNER 04.png"
+                class="d-block w-100"
+                alt="Banner 04"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/BANNER 05.png"
+                class="d-block w-100"
+                alt="Banner 05"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Esta función inicializa el carrusel de Bootstrap con el atributo data-bs-ride
+      document.addEventListener("DOMContentLoaded", function () {
+        var myCarousel = new bootstrap.Carousel(
+          document.getElementById("carouselExample"),
+          {
+            interval: 2000, // Ajusta el intervalo en milisegundos (cada 5 segundos)
+            wrap: true, // Establece si el carrusel debe volver al primer elemento después de llegar al último
+          }
+        );
+      });
+    </script>
+
+    <!--Sección de los 3 cuadros-->
+    <section class="oferts container">
+      <div class="ofert-1 b1">
+        <div class="ofert-txt">
+          <h3>Funkos Pops</h3>
+          <a
+            href="img/Cartel Poster Pasos para mejorar la Autoestima Doodle Marrón y Blanco (1).png"
+            >Ver más</a
+          >
+        </div>
+        <div class="ofert-img">
+          <img src="img/leer_más_01.png" alt="CuadroNaranja" />
+        </div>
+      </div>
+      <div class="ofert-1 b2">
+        <div class="ofert-txt">
+          <h3>Siempre con beneficios</h3>
+          <a
+            href="img/Historia de Instagram Promoción Negocio Ilustrado Rosa.mp4"
+            alt="CuadroVerde"
+            >Ver más</a
+          >
+        </div>
+        <div class="ofert-img">
+          <img src="img/Leer_mas_05.png" alt="CuadroVerde" />
+        </div>
+      </div>
+      <div class="ofert-1 b3">
+        <div class="ofert-txt">
+          <h3>Nunca decepcionamos</h3>
+          <a href="cuadrorojo.html">Ver más</a>
+        </div>
+        <div class="ofert-img">
+          <img src="img/Leer_más_07.png" alt="CuadroRojo" />
+        </div>
+      </div>
+    </section>
+    <!--Productos-->
+    <div class="row">
+      <img src="img/PRODUCTOS.png" alt="Nosotros" class="img-fluid" />
+    </div>
+    <main class="products container">
+      <div class="box-container" id="lista-1">
+        <!--1-->
+        <div class="box">
+          <img src="img/IMG DISNEY 01.jpeg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Disney: Classics - Chip</h3>
+            <p>Figura Funko Pop de Chip de la serie Disney Classics.</p>
+            <p class="precio">S/69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="5">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--2-->
+        <div class="box">
+          <img src="img/IMG DISNEY 03.jpeg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Disney: Villaina - Malefica</h3>
+            <p>Figura Funko Pop de Maléfica de la serie Villanos de Disney.</p>
+            <p class="precio">S/69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="2">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--3-->
+        <div class="box">
+          <img src="img/IMG STAR WARS 01.jpeg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Star Wars: Obi Wan Kenobi</h3>
+            <p>Figura Funko Pop de Star Wars: Obi Wan Kenobi.</p>
+            <p class="precio">S/ 69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="3">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--4-->
+
+        <div class="box">
+          <img src="img/IMG MARVEL 02.jpeg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Marvel Avengers - Thor</h3>
+            <p>Figura Funko Pop Pop Marvel Avengers - Thor</p>
+            <p class="precio">S/ 80.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="6">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--5-->
+        <div class="box">
+          <img src="img/IMG MARVEL 01.jpeg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Marvel - Captain Marvel</h3>
+            <p>
+              Figura Funko Pop de Capitana Marvel, de Marvel. Exclusivo 2023
+            </p>
+            <p class="precio">S/ 89.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="1">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--6-->
+        <div class="box">
+          <img src="img/IMG DC 01.jpeg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop: DC - Wonder Woman (Black Lantern)</h3>
+            <p>Figura Funko Pop de la Mujer Maravilla DC Comics</p>
+            <p class="precio">S/ 69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="4">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--7-->
+        <div class="box">
+          <img src="img/IMG DC 02.jpeg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop DC Comics - Harley Quinn w/ Mallet</h3>
+            <p>
+              Figura Funko Pop de Harley Quinn con su mazo de la serie DC
+              Comics.
+            </p>
+            <p class="precio">S/ 69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="7">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+
+        <!--8-->
+        <div class="box">
+          <img src="img/IMG STAR WARS 03.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Star Wars:Dooku vs. Anakin</h3>
+            <p>
+              Figura Funko Pop de Count Dooku vs. Anakin Skywalker, Exclusivo
+            </p>
+            <p class="precio">S/ 139.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="8">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--9-->
+        <div class="box">
+          <img src="img/IMG DISNEY 04.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Disney - Mickey Mouse</h3>
+            <br />
+            <p>Figura Funko Pop de Mickey Mouse, de Disney Classics.</p>
+            <br />
+            <p class="precio">S/ 69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="9">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--10-->
+        <div class="box">
+          <img src="img/IMG FUNKOS MARVEL 04.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Marvel 80th Anniversary - Spider-Man</h3>
+            <p>
+              Figura Funko Pop de Spider-Man, por el aniversario 80 de Marvel.
+            </p>
+            <p class="precio">S/ 69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="10">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+        <!--11-->
+        <div class="box">
+          <img src="img/IMG DISNEY 05.jpg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Disney: Lilo & Stitch - Stitch w/ ukelele</h3>
+            <p>
+              Figura Funko Pop de Stitch con ukelele, de la película Lilo &
+              Stitch.
+            </p>
+            <p class="precio">S/ 69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="11">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+
+        <!--12-->
+        <div class="box">
+          <img src="img/IMG DISNEY 02.jpeg" alt="" />
+          <div class="product-txt">
+            <h3>Funko Pop Disney 100 - Cinderella</h3>
+            <p>
+              Figura Funko Pop de Cenicienta de la serie 100 años de Disney.
+            </p>
+            <br />
+            <p class="precio">S/ 69.90</p>
+            <a href="#" class="agregar-carrito btn-3" data-id="12">
+              Agregar al carrito
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-2" id="load-more">Cargar más</div>
+    </main>
+
+    <section class="testimonio container">
+      <span>Testimoniales</span>
+      <h2>Que opinan nuestros clientes</h2>
+      <h3>¡Lo mejor de lo mejor!</h3>
+      <div class="testimonial-content">
+        <div class="testimonial-1">
+          <p>
+            "¡Estoy emocionada con mi colección de Funkos de Marvel! Cada figura
+            captura la esencia de mis superhéroes favoritos. La calidad y los
+            detalles son impresionantes. ¡No puedo esperar para ampliar mi
+            colección con las próximas incorporaciones!"
+          </p>
+          <img src="img/starts.png" alt="" />
+          <h4>Calificación</h4>
+        </div>
+
+        <div class="testimonial-1">
+          <p>
+            "Como fanático de Star Wars, los Funkos son una adición increíble a
+            mi colección. Desde Darth Vader hasta Yoda, cada figura tiene ese
+            toque único que los hace especial. La variedad de personajes
+            disponibles es asombrosa. ¡Definitivamente, una compra que vale la
+            pena!"
+          </p>
+          <img src="img/starts.png" alt="" />
+          <h4>Calificación</h4>
+        </div>
+      </div>
+    </section>
+
+    <%- include('partials/footer.ejs') %>
+  </body>
+</html>
