@@ -13,5 +13,5 @@ app.set("view engine", "ejs"); //
 app.use(indexRouter); // usamos el router index
 app.use(express.static(join(__dirname, "public"))); // seteamos la carpeta publica :
 
-app.listen(3000);
+app.listen(process.env.port || 3000);
 console.log("Servidor corriendo en el puerto 3000 : http://localhost:3000");
